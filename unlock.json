@@ -17,7 +17,7 @@
 		"immatureDepth": 20,
 		"keepTxFees": false,
 		"interval": "30m",
-		"daemon": "http://rpc1.etherzero.org:9646",
+			"daemon": "http://rpc1.etherzero.org:9646",
 		"timeout": "10s"
 	}
 
