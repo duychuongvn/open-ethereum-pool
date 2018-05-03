@@ -15,19 +15,19 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-        ApiUrl: 'http://us-pool.etherzero.org/',
+      ApiUrl: '//51.38.33.44/',
 
       // HTTP mining endpoint
-      HttpHost: 'http://us-pool.etherzero.org',
+      HttpHost: 'http://51.38.33.44',
       HttpPort: 8888,
 
       // Stratum mining endpoint
-      StratumHost: 'us-pool.etherzero.org',
+      StratumHost: '51.38.33.44',
       StratumPort: 8008,
 
       // Fee and payout details
-      PoolFee: '2%',
-      PayoutThreshold: '1 ETZ',
+      PoolFee: '1%',
+      PayoutThreshold: '0.1 CLO',
 
       // For network hashrate (change for your favourite fork)
       BlockTime: 14.4
@@ -63,3 +63,4 @@ module.exports = function(environment) {
 
   return ENV;
 };
+

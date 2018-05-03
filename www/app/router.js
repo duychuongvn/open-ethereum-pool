@@ -15,6 +15,10 @@ Router.map(function() {
     this.route('immature');
     this.route('pending');
   });
+  this.route('immature');
+  this.route('claymore');
+  this.route('ethermine');
+  this.route('nicehash');
 
   this.route('help');
   this.route('payments');

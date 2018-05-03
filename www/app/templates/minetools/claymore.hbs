@@ -1,0 +1,54 @@
+
+    <div class="border-top-0">
+      <p>
+        Obtain CLO wallet address at <a href="https://ethereumproject.github.io/etherwallet/" target="_blank">https://ethereumproject.github.io/etherwallet/</a>
+      </p>
+      <p>Download <a href="https://github.com/nanopool/Claymore-Dual-Miner/releases" target="blank">Claymore
+        Dual Miner</a> for you operation system</p>
+      <h4><img src="/img/windows.svg" height="20"> Windows</h4>
+      <p>
+        Create <code>miner.bat</code> file with following content and run it.
+      </p>
+      <pre><code>
+setx GPU_FORCE_64BIT_PTR 0
+setx GPU_MAX_HEAP_SIZE 100
+setx GPU_USE_SYNC_OBJECTS 1
+setx GPU_MAX_ALLOC_PERCENT 100
+setx GPU_SINGLE_ALLOC_PERCENT 100
+<kbd>&lt;path to miner&gt;</kbd>/ethdcrminer64.exe -epool sg.clo.epool.network:8008 -ewal <kbd>&lt;wallet&gt;</kbd> -eworker <kbd>&lt;worker&gt;</kbd> -epsw x -mode 1
+          </code></pre>
+      <p>
+        <code>&lt;wallet&gt;</code> is your CLO wallet address, example:
+        <code>0x81029273484ed1167910dd38f7b73000d342f3cf</code>.
+        <br>
+        <code>&lt;worker&gt;</code> is custom name for worker, example : <code>rig01</code>,
+        <code>rig02</code>
+      </p>
+    </div>
+
+
+    <div class="border-top-0">
+      <h4><img src="/img/linux.svg" height="20"> Linux</h4>
+      <p>
+        Create <code>miner.sh</code> file with following content:
+      </p>
+      <pre><code>
+#!/bin/bash
+export GPU_FORCE_64BIT_PTR=0
+export GPU_MAX_HEAP_SIZE=100
+export GPU_USE_SYNC_OBJECTS=1
+export GPU_MAX_ALLOC_PERCENT=100
+export GPU_SINGLE_ALLOC_PERCENT=100
+<kbd>&lt;path to miner&gt;</kbd>/ethdcrminer64 -epool sg.clo.epool.network:8008 -ewal <kbd>&lt;wallet&gt;</kbd> -eworker <kbd>&lt;worker&gt;</kbd> -epsw x -mode 1
+          </code></pre>
+      <p>
+        Make it executable: <code>chmod +x &lt;path to miner.sh file&gt;</code> and run it
+      </p>
+      <p>
+        <code>&lt;wallet&gt;</code> is your CLO wallet address, example:
+        <code>0x81029273484ed1167910dd38f7b73000d342f3cf</code>.
+        <br>
+        <code>&lt;worker&gt;</code> is custom name for worker, example : <code>rig01</code>,
+        <code>rig02</code>
+      </p>
+    </div>
