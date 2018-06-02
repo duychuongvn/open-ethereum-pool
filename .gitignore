@@ -1,6 +1,7 @@
 .DS_Store
 config.json
 testnet.json
-
+.idea
+/dist
 /build/_workspace/
 /build/bin/
