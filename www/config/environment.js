@@ -15,7 +15,7 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-        ApiUrl: 'http://localhost:8080',
+        ApiUrl: '//chuonghd.vantechdns.net:8000/',
 
       // HTTP mining endpoint
       HttpHost: 'http://192.168.1.12',
